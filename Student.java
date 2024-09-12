@@ -1,20 +1,11 @@
+package mystudent;
+
 public class Student {
-    private static int numOfStudents = 0;
+  public static void sayHello() {
+      System.out.println("\n Hello from student class. I am a static method and I belong to the Student class!\n");
+  }
 
-    // Create a constructor for our new object
-    public Student () {
-        numOfStudents++;
-    }
-
-    public static int getNumOfStudents() {
-        return numOfStudents;
-    }
-
-    // Give our student class a few fields
-    String firstName;
-    String lastName;
-    double gpa;
-    String major;
-    int age;
-    boolean onProbation;
+  public void sayHi() {
+      System.out.println("\n Hi there I must be from an object because I am not static");
+  }
 }
