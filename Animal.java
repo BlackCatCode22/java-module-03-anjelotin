@@ -1,17 +1,43 @@
-package myanimals;
-
 public class Animal {
-    // There is not a "static" keyword here, so... this method
-    // will be available to Animal objects
-    // Create a static member named numOfAnimal
-   public static int numOfAnimals = 0;
+    // Create a static int that keep track of the number of animals created.
+    static int numOfAnimals = 0;
 
+    // Create a constructor for our new Animal objects
     public Animal() {
         numOfAnimals++;
     }
 
-    public void animalSound() {
 
-        System.out.println("\n A sound from the animal class : The animal makes a sound");
+    // Create a few attributes (fields)
+    // Sex will be 'male' or 'female'
+    private String sex = "";
+    // age will be in years
+    private int age = 0;
+    // weight will be in pounds
+    private int weight = 0;
+
+    // Create a getter and setters
+
+
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+
+    public String getSex() {
+        return sex;
+    }
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 }
